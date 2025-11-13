@@ -1,0 +1,14 @@
+<p>
+    <button (click)="doClear()">Clear</button>
+    <button (click)="doSimple()">Simple</button>
+    <button (click)="doMedium()">Medium</button>
+    <button (click)="doComplex()">Complex</button>
+</p>
+<p [innerHTML]="demoText"></p>
+<p>
+    <input type="text" [value]="demoTextToHtmlText()" />
+</p>
+<p>
+    <button>Go</button>
+</p>
+<app-one-liner [codedText]="demoTextToHtmlText()"></app-one-liner>
